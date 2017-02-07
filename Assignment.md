@@ -10,21 +10,21 @@
     * `FIRST_NAME` : 15 character max string. Cannot be empty.
     * `MIDDLE_NAME` : 15 character max string. Can be empty.
     * `LAST_NAME` : 15 character max string. Cannot be empty.
-    * `PHONE_NUM` : string that matches this pattern ###-###-####. Cannot be empty.
+    * `PHONE_NUM` : string that matches this pattern `###-###-####`. Cannot be empty.
 * json files should be output to _`output-directory`_
     * file name should be the same name as the csv file with a `.json` extension
 * json format:
-    ```js
-{
-    id: <INTERNAL_ID>,
-    name: {
-        first: "<FIRST_NAME>",
-        middle: "<MIDDLE_NAME>", // omitted if blank
-        last: "<LAST_NAME>"
-    },
-    phone: "<PHONE_NUM>"
-}
-    ```
+```js
+   {
+       id: <INTERNAL_ID>,
+       name: {
+           first: "<FIRST_NAME>",
+           middle: "<MIDDLE_NAME>", // omitted if blank
+           last: "<LAST_NAME>"
+       },
+       phone: "<PHONE_NUM>"
+   }
+```
 
 ---
 
@@ -38,5 +38,3 @@
 ---
 
 ### As a User, I can configure input, output, and error directories
-
----
