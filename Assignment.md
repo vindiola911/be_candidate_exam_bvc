@@ -29,7 +29,6 @@
 ---
 
 ### As a User, I can produce a csv file containing validation errors
-* if a `error-directory` is not configured, do not produce an error file
 * error records should be written to a csv file in _`error-directory`_
 * an error record should contain:
     1. `LINE_NUM` : the number of the record which was invalid
