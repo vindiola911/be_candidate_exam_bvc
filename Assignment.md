@@ -3,7 +3,7 @@
 
 ### As a User, given a csv, I can produce a json file of valid csv records
 * csv files will be placed into _`input-directory`_
-    * files may not be present at application start
+    * once the application starts it watches _`input-directory`_ for any new files that need to be processed
     * file names will end in `.csv`
 * csv columns and validation
     1. `INTERNAL_ID` : 8 digit positive integer. Cannot be empty.
