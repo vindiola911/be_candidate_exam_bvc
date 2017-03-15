@@ -20,7 +20,7 @@
     * in the event of file name collision, the latest file should overwrite the earlier version.
     * The middle field should not exist if there is no middle name.
 * json format:
-    ```js
+```js
 [
     {
         "id": <INTERNAL_ID>,
@@ -32,7 +32,7 @@
         "phone": "<PHONE_NUM>"
     }
 ]
-    ```
+```
 
 #### Example
 
