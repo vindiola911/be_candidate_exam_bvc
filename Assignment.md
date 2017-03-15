@@ -15,17 +15,42 @@
     * file name should be the same name as the csv file with a `.json` extension
 * json format:
     ```js
-{
-    id: <INTERNAL_ID>,
-    name: {
-        first: "<FIRST_NAME>",
-        middle: "<MIDDLE_NAME>", // omitted if blank
-        last: "<LAST_NAME>"
-    },
-    phone: "<PHONE_NUM>"
-}
+[
+    {
+        "id": <INTERNAL_ID>,
+        "name": {
+            "first": "<FIRST_NAME>",
+            "middle": "<MIDDLE_NAME>",
+            "last": "<LAST_NAME>"
+        },
+        "phone": "<PHONE_NUM>"
+    }
+]
     ```
 
+#### Example
+
+input of:
+
+```
+INTERNAL_ID,FIRST_NAME,MIDDLE_NAME,LAST_NAME,PHONE_NUM
+12345678,Bobby,,Tables,555-555-5555
+```
+
+would produce:
+
+```json
+[
+    {
+        "id": 12345678,
+        "name": {
+            "first": "Bobby",
+            "last": "Tables"
+        },
+        "phone": "555-555-5555"
+    }
+]
+```
 ---
 
 ### As a User, I can produce a csv file containing validation errors
