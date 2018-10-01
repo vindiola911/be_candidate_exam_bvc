@@ -12,3 +12,14 @@ This repo contains an exercise intended for Back-End Engineers.
 ## Expectations
 1. Please take no more than 8 hours to work on this exercise. Complete as much as possible and then submit your solution.
 1. This exercise is meant to showcase how you work. With consideration to the time limit, do your best to treat it like a production system.
+
+## How-To
+0. Download and install the [.NET Core SDK](https://www.microsoft.com/net/download).
+0. Open a windows cmd prompt, and navigate to the root directory of the project ```\CSVtoJSONExperience```.
+0. From here, run ```dotnet run```. This will bring up the application with a greeting message and instructions for you to enter commands.
+0. Enter ```csvtojson /path/to/listen/ /path/to/jsonoutput/ /path/to/erroroutput/``` to begin listening for files to convert (. and .. directories are supported). Existing files in listening directory will be automatically processed.
+0. Enter the ```exit``` command to exit the application.
+
+## Assumptions
+- 15 character max means cutting off string at 15 chars, not hiding info or showing full string (in addition to logging error).
+- Delete a file if it has already been processed.
